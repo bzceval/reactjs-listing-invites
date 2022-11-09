@@ -4,21 +4,13 @@ const PeopleCard = ({ data }) => {
   const { name, age, image } = data;
   console.log(data);
   return (
-    <div className="col">
-      <div className="card">
-        <div className="row g-0">
-          <div className="col-md-4">
-            <img src={image} alt="profile-image" height="100" width="100" />
-          </div>
-          <div className="col-md-8">
-            <div className="card-body">
-              <h5 className="card-title">{name}</h5>
-              <p className="card-text">
-                <small className="text-muted">{age} years</small>
-              </p>
-            </div>
-          </div>
-        </div>
+    <div className="person-card m-3">
+      <div class="d-flex pt-1 pb-1">
+        <img src={image} width="60" alt="" />
+        <p class="ms-2 pb-3 mb-0 small">
+          <strong class="d-block text-gray-dark">{name}</strong>
+          {age}
+        </p>
       </div>
     </div>
   );
