@@ -1,4 +1,4 @@
-# Listing Invitees
+# Listing Invites
 - By Busra Zulal Ceval </br>
 - This project was written to solidify the foundations of Reactjs.
 
