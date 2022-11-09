@@ -15,5 +15,6 @@
 }
 .btn-danger {
   background-color: #c3984e !important;
-  border: none !important;  
+  border: none !important; 
+  width: 30%; 
 }

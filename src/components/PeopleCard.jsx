@@ -9,7 +9,7 @@ const PeopleCard = ({ data }) => {
         <img src={image} width="60" alt="" />
         <p class="ms-2 pb-3 mb-0 small">
           <strong class="d-block text-gray-dark">{name}</strong>
-          {age}
+          Age: {age}
         </p>
       </div>
     </div>
