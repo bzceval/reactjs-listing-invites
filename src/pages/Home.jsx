@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <div className="home-continer">
       <div className="home-row">
-      <div className='clearall-container'>
-        <button onClick={() => setShow(!show)} className="btn btn-danger mt-2">
+        <div className="home-align"> 
+        <button onClick={() => setShow(!show)} className="btn btn-danger my-5">
           {show ? "Clear All" : "View All"}
-        </button>
-        </div>
+        </button> 
         {show ? <PeopleList/> : <ClearAll/>} 
+      </div>
       </div>
     </div>
   );

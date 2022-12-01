@@ -2,7 +2,7 @@ import React from 'react'
 
 const ClearAll = () => {
   return (
-    <div className='clearall-container'> 
+    <div className='clear-container'> 
         Click to View All Invite List. 
     </div>
   )
