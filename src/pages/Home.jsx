@@ -9,7 +9,7 @@ const Home = () => {
     <div className="home-continer">
       <div className="home-row">
         <div className="home-align"> 
-        <button onClick={() => setShow(!show)} className="btn btn-danger my-5">
+        <button onClick={() => setShow(!show)} className="btn btn-danger my-3">
           {show ? "Clear All" : "View All"}
         </button> 
         {show ? <PeopleList/> : <ClearAll/>} 

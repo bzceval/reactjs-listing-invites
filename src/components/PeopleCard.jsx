@@ -2,7 +2,7 @@ import React from "react";
 
 const PeopleCard = ({ data }) => {
   const { name, age, image } = data;
-  console.log(data);
+ 
   return (
     <div className="person-card m-3">
       <div className="d-flex p-3">
