@@ -10,7 +10,7 @@ const Home = () => {
       <div className="home-row">
         <div className="home-align"> 
         <button onClick={() => setShow(!show)} className="btn btn-danger my-3">
-          {show ? "Clear All" : "View All"}
+          {show ? "Add Participant" : "View All Invite List"}
         </button> 
         {show ? <PeopleList/> : <ClearAll/>} 
       </div>

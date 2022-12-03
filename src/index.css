@@ -26,16 +26,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: 'Raleway', sans-serif;
-}
-.btn-primary {
-  background-color: #96612b !important;
-  border: none !important;
-  font-family: 'Raleway', sans-serif !important;
-  font-size: .8rem !important; 
-}
-.btn-primary:hover {
-  background-color: #96602bd2 !important;
-}
+} 
 .person-card:hover {
   transform: scale(1.1);
 }
