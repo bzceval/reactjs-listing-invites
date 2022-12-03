@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/reactjs-listing-invites/static/css/main.d005b668.css",
+    "main.js": "/reactjs-listing-invites/static/js/main.80bdbcf4.js",
+    "static/media/background.jpg": "/reactjs-listing-invites/static/media/background.89d71c35078751714a64.jpg",
+    "index.html": "/reactjs-listing-invites/index.html",
+    "main.d005b668.css.map": "/reactjs-listing-invites/static/css/main.d005b668.css.map",
+    "main.80bdbcf4.js.map": "/reactjs-listing-invites/static/js/main.80bdbcf4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d005b668.css",
+    "static/js/main.80bdbcf4.js"
+  ]
+}
