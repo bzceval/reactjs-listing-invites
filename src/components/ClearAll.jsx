@@ -27,20 +27,20 @@ const ClearAll = () => {
       console.log(error);
     }
   }; 
-
+ 
+   console.log(user)
   return (
     <div className="clear-container">
       <p>Click to View All Invite List.</p>
-      <div className="row">
-        <div className="col">
+      <div className="row"> 
           <div className="card user-card rounded-3 shadow">
             <div className="card-main my-3">
-            {hoverAttribute.name && <p>Busra</p>}  
-            {hoverAttribute.email && <p>@gmail</p>} 
-            {hoverAttribute.age && <p>24</p>} 
-            {hoverAttribute.phone && <p>5236698</p>} 
-            {hoverAttribute.location && <p>Gazi</p>}
-            {hoverAttribute.info && <p>yes</p>}
+            {hoverAttribute.name && <p>{user?.name.title} {user?.name.first} {user?.name.last}</p>}  
+            {hoverAttribute.email && <p>{user?.email}</p>} 
+            {hoverAttribute.age && <p>{user?.dob.age}</p>} 
+            {hoverAttribute.phone && <p>{user?.phone}</p>} 
+            {hoverAttribute.location && <p>{user?.location.street.name}</p>}
+            {hoverAttribute.info && <p>{user?.login.username} {user?.login.password}</p>}
             </div>
 
             <div className="card-body d-flex">
@@ -51,16 +51,12 @@ const ClearAll = () => {
               <MdOutlineLocationCity className="icon p-2 mx-4 rounded-5" onMouseEnter={()=> setHoverAttribute({...hoverAttribute, location: true})} onMouseLeave={()=> setHoverAttribute({...hoverAttribute, location: false})} />
               <RiLockPasswordFill className="icon p-2 mx-4 rounded-5" onMouseEnter={()=> setHoverAttribute({...hoverAttribute, info: true})} onMouseLeave={()=> setHoverAttribute({...hoverAttribute, info: false})} />
             </div>
-            <div className="d-flex justify-content-around my-3">
+            <div className="d-flex justify-content-around my-5">
               <button className="btn btn-outline-dark" onClick={getUser}>get user</button>
               <button className="btn btn-outline-dark">add user</button>
             </div>
           </div>
-        </div>
-      </div>
-      <button className="btn btn-dark" onClick={getUser}>
-        Random User
-      </button>
+        </div>  
     </div>
   );
 };
