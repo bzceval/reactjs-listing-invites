@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { GiPhone } from "react-icons/gi";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { MdMarkEmailUnread, MdOutlineLocationCity } from "react-icons/md";
 import { FaUserSecret } from "react-icons/fa";
 import { useEffect } from "react";
+import { UserContext } from "../context/UserContextProvider";
 
 const initialState = {
   name: false,
@@ -17,6 +18,7 @@ const initialState = {
 const ClearAll = () => {
   const [user, setUser] = useState();
   const [hoverAttribute, setHoverAttribute] = useState(initialState);
+  const {setAddUser, addUser} = useContext(UserContext)
 
   const getUser = async () => {
     const url = `https://randomuser.me/api`;
@@ -28,6 +30,12 @@ const ClearAll = () => {
       console.log(error);
     }
   };
+
+  const handleClick = () => {
+    const newUser = [{...user, ...addUser}]
+    setAddUser(newUser)
+    console.log(addUser)
+  }
 
   useEffect(() => {
     getUser();
@@ -93,7 +101,7 @@ const ClearAll = () => {
             <button className="btn btn-outline-dark" onClick={getUser}>
               other user
             </button>
-            <button className="btn btn-outline-dark">add user</button>
+            <button className="btn btn-outline-dark" onClick={handleClick}>add user</button>
           </div>
         </div>
       </div>
