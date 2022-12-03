@@ -79,3 +79,11 @@ border: none !important;
 .card-main img {
   border-radius: 50%;
 }
+.btn-outline-dark {
+  color: #a57235 !important;
+  border: 1px solid #a57235 !important;
+}
+.btn-outline-dark:hover {
+  color: bisque !important;
+  background-color: #a57235 !important;
+}

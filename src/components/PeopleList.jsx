@@ -4,6 +4,7 @@ import { useContext } from "react";
 
 const PeopleList = () => { 
   const {addUser} = useContext(UserContext)
+
   return (
     <div className="people-container">
       <h1>People List</h1> 
