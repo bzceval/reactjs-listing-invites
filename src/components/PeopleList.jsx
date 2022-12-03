@@ -1,5 +1,4 @@
-import PeopleCard from "./PeopleCard";
-import data from "../utils/data";
+import PeopleCard from "./PeopleCard"; 
 import { UserContext } from "../context/UserContextProvider";
 import { useContext } from "react";
 
@@ -8,8 +7,8 @@ const PeopleList = () => {
   return (
     <div className="people-container">
       <h1>People List</h1> 
-      {addUser.map((item, id) => (
-        <PeopleCard key={id} data={item} />
+      {addUser.map((user, id) => (
+        <PeopleCard key={id} userData={user} />
       ))} 
     </div>
   );
