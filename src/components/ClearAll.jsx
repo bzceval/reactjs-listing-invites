@@ -53,7 +53,7 @@ const ClearAll = () => {
             {hoverAttribute.age && <> <h4>Birthday</h4> <p>{user?.dob.age}</p></>  }
             {hoverAttribute.phone && <> <h4>Phone Number</h4> <p>{user?.phone}</p></> }
             {hoverAttribute.location && <> <h4>Location</h4> <p>{user?.location.street.name}</p> </>}
-            {hoverAttribute.info && ( <> <h4>Username</h4> <p> {user?.login.username} </p></> )}
+            {hoverAttribute.info && <> <h4>Username</h4> <p> {user?.login.username} </p></> }
           </div>
 
           <div className="card-body d-flex">

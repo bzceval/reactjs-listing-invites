@@ -1,6 +1,6 @@
 import React from "react";
 
-const PeopleCard = ({ userData }) => { 
+const PeopleCard = ({ userData }) => {  
  
   return (
     <div className="person-card m-3">
