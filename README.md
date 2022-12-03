@@ -15,3 +15,4 @@
 - Start `yarn start` command in your terminal.
 
 ## DEMO
+![random](https://user-images.githubusercontent.com/100320309/205458565-dc2586d6-019a-486b-83bd-bf7eefcde3ae.gif)
