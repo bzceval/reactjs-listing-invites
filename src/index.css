@@ -63,4 +63,12 @@ body {
 .icon {
   background-color: #a57235;
   color: bisque;
+  transition: all .5s;
+  cursor: pointer;
+}
+.icon:hover {
+  transform: translate3d(1px, -20%, .5em);
+  transition: all .5s;
+  background-color: #96612b;
+  cursor: pointer;
 }
