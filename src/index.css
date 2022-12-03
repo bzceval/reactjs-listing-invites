@@ -63,6 +63,19 @@ body {
   background-color: #96612b;
   cursor: pointer; 
 } 
+.user-card {
+background: rgba(150, 97, 43, 0.03) !important;
+border: none !important;  
+}
+.card-main {
+  height: 250px;
+  color: bisque;
+  font-family: 'Raleway', sans-serif;
+}
+.card-name {
+  color: #a57235;
+  font-size: 1.5rem;
+}
 .card-main img {
   border-radius: 50%;
 }

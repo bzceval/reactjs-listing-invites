@@ -39,17 +39,13 @@ const ClearAll = () => {
         <div className="card user-card rounded-3 shadow">
           <div className="card-main my-3">
             <img src={user?.picture.large} alt="" />
-            <p> {user?.name.title} {user?.name.first} {user?.name.last} </p>
-  
+            <p className="card-name"> {user?.name.title} {user?.name.first} {user?.name.last} </p>
+            <hr />
             {hoverAttribute.email && <> <h4>Email</h4> <p>{user?.email}</p></> }
             {hoverAttribute.age && <> <h4>Birthday</h4> <p>{user?.dob.age}</p></>  }
             {hoverAttribute.phone && <> <h4>Phone Number</h4> <p>{user?.phone}</p></> }
             {hoverAttribute.location && <> <h4>Location</h4> <p>{user?.location.street.name}</p> </>}
-            {hoverAttribute.info && (
-              <p>
-                {user?.login.username} {user?.login.password}
-              </p>
-            )}
+            {hoverAttribute.info && ( <> <h4>Username</h4> <p> {user?.login.username} </p></> )}
           </div>
 
           <div className="card-body d-flex">
