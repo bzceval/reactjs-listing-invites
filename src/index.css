@@ -63,3 +63,6 @@ body {
   background-color: #96612b;
   cursor: pointer; 
 } 
+.card-main img {
+  border-radius: 50%;
+}

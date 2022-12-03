@@ -38,11 +38,13 @@ const ClearAll = () => {
       <div className="row">
         <div className="card user-card rounded-3 shadow">
           <div className="card-main my-3">
-            {hoverAttribute.name && ( <p> {user?.name.title} {user?.name.first} {user?.name.last} </p> )}
-            {hoverAttribute.email && <p>{user?.email}</p>}
-            {hoverAttribute.age && <p>{user?.dob.age}</p>}
-            {hoverAttribute.phone && <p>{user?.phone}</p>}
-            {hoverAttribute.location && <p>{user?.location.street.name}</p>}
+            <img src={user?.picture.large} alt="" />
+            <p> {user?.name.title} {user?.name.first} {user?.name.last} </p>
+  
+            {hoverAttribute.email && <> <h4>Email</h4> <p>{user?.email}</p></> }
+            {hoverAttribute.age && <> <h4>Birthday</h4> <p>{user?.dob.age}</p></>  }
+            {hoverAttribute.phone && <> <h4>Phone Number</h4> <p>{user?.phone}</p></> }
+            {hoverAttribute.location && <> <h4>Location</h4> <p>{user?.location.street.name}</p> </>}
             {hoverAttribute.info && (
               <p>
                 {user?.login.username} {user?.login.password}
@@ -51,13 +53,7 @@ const ClearAll = () => {
           </div>
 
           <div className="card-body d-flex">
-            <FaUserSecret className="icon p-2 rounded-5 mx-4"
-              onMouseEnter={() =>
-                setHoverAttribute({ ...hoverAttribute, name: true })
-              }
-              onMouseLeave={() =>
-                setHoverAttribute({ ...hoverAttribute, name: false })
-              }/>
+            <FaUserSecret className="icon p-2 rounded-5 mx-4" />
              
             <MdMarkEmailUnread
               className="icon p-2 mx-4 rounded-5"
@@ -99,7 +95,7 @@ const ClearAll = () => {
 
           <div className="d-flex justify-content-around my-5">
             <button className="btn btn-outline-dark" onClick={getUser}>
-              get user
+              other user
             </button>
             <button className="btn btn-outline-dark">add user</button>
           </div>
